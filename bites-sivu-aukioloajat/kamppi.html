@@ -1,52 +1,39 @@
 <!DOCTYPE html>
 <html>
-<title>Bites-app</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxfwhXUB0Fc5Is-Tp9nbMSZ_i-55zLPVo&libraries=places"></script>
 
 <style>
-  body, html {
-    height: 100%;
-    font-family: "Inconsolata", sans-serif;
-  margin: auto;
-  }
-  
-  .bgimg {
-    background-position: center;
-    background-size: cover;
-    min-height: 75%;
-  }
-  
-  .menu {
-    display: none;
-  }
-  #all_data {
-          font-size: 20px;
-          padding: 20px;
-          text-align: center;
-          line-height: 1.6;
-          line-height: 270%;
-          color: white;
-      }
-      #today_opening {
-          display: hidden;
-          display: none;
-      }
-     .footet {
-         color: white;
-         list-style: none;
-         padding: 30px;
-         margin: 3px;
-     }
-  </style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+margin: auto;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+#all_data {
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+        line-height: 1.6;
+        line-height: 270%;
+        color: white;
+    }
+    #today_opening {
+        display: hidden;
+        display: none;
+    }
+</style>
 <body>
     <input id="today_opening" style="width:300px"/>
 
-
-<!-- Links (sit on top) -->
 
 
 <div id="map" hidden></div>
@@ -91,14 +78,6 @@
 
     update_opentimes("ChIJu-oUeKMLkkYREDPMcX7c7II");
 </script>
-
-<div class="footet">
-    <footer>
-        <li>
-            <a href="./index.html">Takaisin</a>
-        </li>
-    </footer>
-</div>
 
 </body>
 </html>

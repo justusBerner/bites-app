@@ -25,8 +25,7 @@ margin: auto;
         text-align: center;
         line-height: 1.6;
         line-height: 150%;
-         color: #ffffff; 
-    }
+        color: #ffffff;    }
     #today_opening {
         display: hidden;
         display: none;
@@ -47,7 +46,7 @@ margin: auto;
     function update_opentimes(place_id) {
         const request = {
             placeId: place_id,
-			fields: ['opening_hours'],
+            fields: ['opening_hours'],
         };
         console.log(request);
         const map = new google.maps.Map(document.getElementById("map"), {});
@@ -78,7 +77,6 @@ margin: auto;
     }
 
     update_opentimes("ChIJC23-QPr1jUYRvF9iRLihSbQ");
-
 </script>
 
 </body>

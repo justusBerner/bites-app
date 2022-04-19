@@ -3,9 +3,10 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCp8dSu8XWyxJp6hs9hNfehbBkaazKwmMg&libraries=places"></script>
 
 <style>
+    @import url("https://use.typekit.net/vvz4okr.css");
 body, html {
   height: 100%;
-  font-family: "Inconsolata", sans-serif;
+  font-family: rift !important;
 margin: auto;
 }
 
@@ -20,12 +21,11 @@ margin: auto;
 }
 #all_data {
         font-size: 20px;
-        padding: 20px;
+        padding: 0px;
         text-align: center;
         line-height: 1.6;
-        line-height: 270%;
-        color: #ffffff; 
-    }
+        line-height: 150%;
+        color: #ffffff;    }
     #today_opening {
         display: hidden;
         display: none;
@@ -40,11 +40,13 @@ margin: auto;
 <div id="all_data"></div>
 
 
+
+
 <script>
     function update_opentimes(place_id) {
         const request = {
             placeId: place_id,
-			fields: ['opening_hours'],
+            fields: ['opening_hours'],
         };
         console.log(request);
         const map = new google.maps.Map(document.getElementById("map"), {});

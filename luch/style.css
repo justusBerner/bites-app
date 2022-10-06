@@ -1,0 +1,30 @@
+@import url("https://use.typekit.net/vvz4okr.css");
+body, html {
+  height: 100%;
+  font-family: rift !important;
+margin: auto;
+}
+
+* {
+    padding:0;
+}
+
+
+    body {
+        width: 1920px;
+        height: 1080px;
+        margin: 0 auto;
+        border: 8px solid #000;
+        margin: 7px 7px 7px 7px;
+    }
+
+
+.nelio {
+    width:1920px;
+    height:100px;
+  
+    padding:0;
+    margin:0;
+}
+
+@media screen and (max-width: 1920px) {}

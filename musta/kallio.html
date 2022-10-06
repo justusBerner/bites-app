@@ -33,51 +33,30 @@ margin: auto;
 </style>
 <body>
     <input id="today_opening" style="width:300px"/>
+    
 
 
 
 <div id="map" hidden></div>
-<div id="all_data"></div>
+<div id="all_data">
+    Maanantai: 11.00-21.00
+    <br>
+    Tiistai: 11.00-22.00
+    <br>
+    Keskiviikko: 11.00-22.00
+    <br>
+    Torstai: 11.00-22.00
+    <br>
+    Perjantai: 11.00-23.00
+    <br>
+    Lauantai: 12.00-23.00
+    <br>
+    Sunnuntai: 14.00-21.00
+</div>
 
 
 
 
-<script>
-    function update_opentimes(place_id) {
-        const request = {
-            placeId: place_id,
-            fields: ['opening_hours'],
-        };
-        console.log(request);
-        const map = new google.maps.Map(document.getElementById("map"), {});
-
-        const infowindow = new google.maps.InfoWindow();
-        const service = new google.maps.places.PlacesService(map);
-        const all_data = document.getElementById("all_data");
-        service.getDetails(request, (place, status) => {
-            if(status === google.maps.places.PlacesServiceStatus.OK)
-        {
-            console.log(place);
-            var d = new Date();
-            var n = d.getDay();
-            n=n-1;
-            if(n==-1){
-                n=6;
-            }
-            all_html="";
-            for(var i=0;i<7;i+=1){
-                day = place['opening_hours']['weekday_text'][i].split(": ")[0].trim();
-                time = place['opening_hours']['weekday_text'][i].split(": ")[1].trim();
-                all_html+="<div style='display: inline-block;'><span>"+day+"</span> : <span>"+time+"</span></div><br/>"
-            }
-            all_data.innerHTML=all_html;
-
-        }
-        });
-    }
-
-    update_opentimes("ChIJM5F5DvEJkkYRCOnFbdBAxW4");
-</script>
 
 </body>
 </html>

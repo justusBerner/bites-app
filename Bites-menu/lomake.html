@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muokkaa lounastietoja I Bites Burger</title>
+    <link rel="stylesheet" href="index2.css">
+</head>
+<body>  
+    <div class="container">
+      <form action="./index.html">
+      <div class="row">
+        <label for="week">Choose Week</label>
+  <input type="week" id="week" name="week">
+          <p style="font-size: 30px; font-weight: 600; color:rgba(172, 36, 42, 1);
+          ;">Choose A Burger</p>
+        <div class="col-25">
+          <label for="fname">#1 title (c#1)</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="#1" name="#1" placeholder="BBQ SMASH">
+        </div>
+      </div>
+
+      
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">Description</label>
+        </div>
+        <div class="col-75">
+          <textarea id="subject" name="subject" placeholder="SINGLE SMASH PATTY / ...." style="height:200px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+      <div class="col-25">
+        <label for="fname">#2 - title (c#2)</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="#2" placeholder="BBQ SMASH">
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+          <label for="subject">Description</label>
+        </div>
+        <div class="col-75">
+          <textarea id="subject" name="subject" placeholder="SINGLE SMASH PATTY / ...." style="height:200px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">#3 - title (c#3)</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="#3" placeholder="BBQ SMASH">
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-25">
+            <label for="subject">Description</label>
+          </div>
+          <div class="col-75">
+            <textarea id="subject" name="subject" placeholder="SINGLE SMASH PATTY / ...." style="height:200px"></textarea>
+          </div>
+    
+        <p style="font-size: 30px; font-weight: 600; color:rgba(172, 36, 42, 1);
+          ;">Pick A Side</p>
+        <div class="col-25">
+          <label for="fname">#1 - name (p#1)</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="#1" name="#1" placeholder="Fries & house Mayo">
+        </div>
+      </div>
+
+      
+      <div class="row">
+        
+      </div>
+      <div class="row">
+      <div class="col-25">
+        <label for="fname">#2 - title (p#2)</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="#2" placeholder="Fries & house Mayo">
+      </div>
+    </div>
+    <div class="row">
+      
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">#3 - title (p#3)</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="#3" placeholder="Fries & house Mayo">
+        </div>
+      </div>
+      <div class="row">
+          
+        </div>
+      <br>
+      <div class="row">
+        <input  type="reset" value="Reset">
+        <input type="submit"onclick="alert('Lounasmenu on päivitetty')" value="Save">
+        <div id="tp"></div>
+        <div id="data">
+        </div>
+      </div>
+      
+      </form>
+    </div>
+   
+  
+
+    
+    
+    </body>
+
+    <script lang="JavaScript">
+      function processForm()
+      {
+        var parameters = location.search.substring(1).split("&");
+        var temp = parameters [0].split("=");
+        l = unescape(temp[1]);
+        p = unescape(temp[2]);
+        e = unescape(temp[3]);
+        w = unescape(temp[4]);
+
+        document.getElementById("#1").innerHTML = l;
+        document.getElementById("#1").innerHTML = p;
+        document.getElementById("#2").innerHTML = e;
+        document.getElementById("#1").innerHTML = w;
+        document.getElementById("#3").innerHTML = l;
+
+      }
+
+      processForm();
+     
+      </script>
+   
+</html>
+
+
+
+

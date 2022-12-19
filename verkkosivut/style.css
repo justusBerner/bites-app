@@ -1,0 +1,446 @@
+/* GeneratePress Site CSS */ /* Colors */
+.main-color { color: #09BE9F; }
+.dark-grey-background { background: #262626; }
+.dark-grey-button { background: #212121; color: white; }
+.dark-grey-button:hover { background: #323232; color: #09BE9F; }
+.subtitle-text { color: #999; }
+
+ 
+
+#kallio-t {
+	color: white !important;
+}
+#kallio-m {
+	color: white !important;
+}
+
+@media only screen and (max-width: 992px) {
+	.lounasmenum {
+		background-color: #fff;
+		height: 1900px;
+	}
+}
+
+h1 {
+	font-family: rift;
+}
+
+/* Buttons */
+.btn, #nf-field-4 {
+	display: inline-block;
+	border: 2px solid;
+	padding: 15px 50px;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 700;
+	margin-top: 40px;
+	background: transparent;
+}
+.btn.small {
+	padding: 10px 20px;
+	margin-top: 10px;
+}
+
+/* Site Wide */
+hr, .divider {
+	display: block;
+	height: 4px;
+	max-width: 40px;
+	background: #09BE9F;
+	margin: 30px auto;
+}
+
+img.alignnone.size-full {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+.full-width-img {
+	line-height: 0;
+}
+
+/* Header & Navigation */
+.site-header {
+	z-index: 1;
+}
+
+
+/* Hero */
+.page-hero {
+    position: relative;
+}
+.main-hero-wrap {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.main-hero-wrap h1 {
+	font-size: 68px;
+	line-height: 72px;
+}
+.main-hero-wrap p {
+	font-size: 18px;
+	max-width: 700px;
+	margin: 0 auto 60px;
+}
+.scroll-more {
+    display: inline-block;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 40px;
+}
+.scroll-more a {
+    font-size: 20px;
+}
+
+/* Logo Rotator */
+.logo-rotator-wrap {
+    background-position: center;
+}
+.logo-rotator-wrap .generate-sections-inside-container {
+    max-width: 1400px;
+}
+button.slick-arrow, ul.slick-dots {
+    display: none;
+    visibility: hidden;
+}
+.wpls-logo-showcase .wpls-logo-cnt.slick-slide img {
+    border: none;
+    opacity: 0.5;
+}
+.wpls-logo-showcase .wpls-logo-cnt.slick-slide img:hover {
+    border: none;
+    opacity: 1;
+}
+
+#vallila-text, #vallila-t, #kamppi-text, #kamppi-t {
+	color: white;
+}
+
+.has-white-color has-text-color {
+	color: white;
+}
+/* Blog */
+.blog {
+    background-color: #323232;
+}
+.blog #masthead {
+    background-color: #000;
+}
+.blog .post {
+    border-bottom: 2px solid rgba(255,255,255,0.2);
+}
+
+/* Footer */
+.widget .social-icon {
+	display: inline-block;
+}
+
+.widget .social-icon a {
+	margin: 0;
+	border-width: 2px;
+	border-style: solid;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+	color: #f1f1f1;
+	display: inline-block;
+	font-weight: 700;
+	margin-right: 10px;
+}
+
+.widget .social-icon a:hover {
+	color: #09BE9F;
+}
+
+.menu-main-navigation-container ul, .widget_recent_entries ul {
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+.menu-main-navigation-container li {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+	padding: 0!important;
+}
+.widget_recent_entries li {
+	border-bottom: 1px solid rgba(255,255,255,0.1);
+	padding: 10px 0!important;
+}
+.menu-main-navigation-container a {
+    display: block;
+    padding: 10px 0;
+	color: #f1f1f1;
+}
+.menu-main-navigation-container a:hover {
+	color: #09BE9F;
+}
+.widget_recent_entries a {
+	display: block;
+	color: #f1f1f1;
+}
+.widget_recent_entries a:hover {
+	color: #09BE9F;
+}
+.widget_recent_entries .post-date {
+    display: block;
+    font-size: 13px;
+    color: rgba(255,255,255,0.3);
+}
+
+/* Forms */
+.nf-form-fields-required {
+    font-size: 11px;
+    margin-bottom: 10px;
+    color: rgba(255,255,255,0.2);
+    text-align: right;
+}
+
+/* Media Queries / Responsive Design */
+@media (max-width: 1110px) {
+	.main-hero-wrap a {
+    margin: 0;
+}
+	.generate-inside-page-header-content.page-header-content-container {
+    padding: 0;
+}
+	.main-hero-wrap h1 {
+    font-size: 52px;
+    line-height: 64px;
+}
+	
+}
+
+
+@media (max-width: 768px) {
+	.inside-page-header {
+		padding: 60px 20px 80px;
+	}
+	.main-hero-wrap h1 {
+    font-size: 38px!important;
+    line-height: 44px!important;
+}
+	.footer-widgets {
+    padding: 60px;
+}
+}
+
+
+
+
+@media (max-width: 500px) {
+	.mobile-hide {
+		display: none;
+		visibility: hidden;
+	}
+	.main-hero-wrap h1 {
+    font-size: 36px!important;
+    line-height: 42px!important;
+}
+	.footer-widgets {
+    padding: 30px;
+}
+
+}
+
+
+.emails {
+	color: white;
+}
+
+/* Mobile Navigation Breakpoint */
+@media (max-width: 922px) {
+	.site-logo {
+    margin: 0 auto 32px auto!important;
+    display: block;
+}
+	#menu-main-navigation li {
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+	.main-navigation .main-nav ul li a {
+    line-height: 50px;
+}
+	.main-navigation .menu-toggle {
+		display: block;
+	}
+
+	.main-navigation ul {
+		display: none;
+	}
+
+	.main-navigation.toggled .main-nav > ul {
+		display: block;
+	}
+
+	.main-navigation .main-nav ul ul.toggled-on,
+	.secondary-navigation .main-nav ul ul.toggled-on {
+		position: relative;
+		top: 0;
+		left: auto !important;
+		right: auto !important;
+		width: 100%;
+		pointer-events: auto;
+		height: auto;
+		opacity: 1;
+		display: block;
+	}
+
+	.main-navigation .main-nav li {
+		float: none;
+		clear: both;
+		display: block !important;
+		text-align: left !important;
+	}
+
+	.main-navigation .main-nav li.hide-on-mobile {
+		display: none !important;
+	}
+
+	.main-navigation .dropdown-menu-toggle:before {
+		content: "\f107" !important;
+	}
+
+	.main-navigation .sfHover > a .dropdown-menu-toggle:before {
+		content: "\f106" !important;
+	}
+
+	.main-navigation .menu-item-has-children .dropdown-menu-toggle {
+		float: right;
+	}
+
+	.main-navigation .mobile-bar-items {
+		display: block;
+	}
+
+	.main-navigation .menu li.search-item {
+		display: none !important;
+	}
+
+	.main-navigation .sf-menu > li.menu-item-float-right {
+		float: none !important;
+		display: inline-block !important;
+	}
+
+	[class*="nav-float-"] .site-header .inside-header > * {
+		float: none;
+		clear: both;
+	}
+
+	.gen-sidebar-nav {
+		display: none;
+	}
+
+	.sidebar-nav-mobile:not(#sticky-placeholder) {
+		display: block;
+	}
+}
+a.generate-back-to-top {
+	background-color: #000;
+}
+.gp-icon svg {
+	top: -1,em;
+}
+
+#site-navigation a:hover {
+	text-decoration: underline;
+}
+
+
+#mobile-header {
+	background-color: #000;}
+
+.gb-container .wp-block-image img {
+	vertical-align: initial;
+}
+.main-navigation .dropdown-menu-toggle:before {
+display: none;
+}
+
+.main-navigation .site-logo.navigation-logo img, .mobile-header-navigation .site-logo.mobile-header-logo img, .navigation-search input[type="search"] {
+	top: 20px;
+	left: 30px;
+}
+
+.slideout-navigation button.slideout-exit {
+	padding-left: 230px;
+	padding-right: 0px;
+}
+
+.nav-align-center .inside-navigation {
+	background-color: #000;
+}
+
+#sticky-navigation {
+	background-color: #000;
+}
+
+.wp-block-cover-image.has-parallax, .wp-block-cover.has-parallax {
+}
+
+@media only screen and (max-width: 992px) { #lippulaiva,
+	#kaivopiha-text, #vallila-text, #kamppi-text, #vallila-t, #kamppi-t, #kaivopiha-t, #kaivopiha, #kamppi, #vallila, #osoitekoodi, #kallio-t, #kallio-text, #kallio{
+		display:none;}
+	
+
+}
+
+#lt {
+	font-family: rift;
+	font-weight: 600;
+	font-size: 25px;
+}
+
+	@media only screen and (min-width: 992px) {#lippulaiva-m,
+	#kaivopiha-text-mobile, #kaivopiha-mobile, #vallila-text-mobile, #vallila-mobile, #kamppi-text-mobile, #kamppi-mobile,  #kuva-kaivopiha, #kuva-kamppi, #kuva-vallila, #tx-mobile2, #kallio-m, #kallio-text-mobile   {
+		display:none;
+	}
+
+#osoitekoodi {
+	font-family: rift;
+	font-size:23px;
+	font-weight: 600
+}
+		
+		
+	
+
+form.customize-unpreviewable, form.customize-unpreviewable input, form.customize-unpreviewable select, form.customize-unpreviewable button, a.customize-unpreviewable, area.customize-unpreviewable {
+	background-color: #000;
+	border-color: #fff; }
+
+form.customize-unpreviewable, form.customize-unpreviewable input, form.customize-unpreviewable select, form.customize-unpreviewable button, a.customize-unpreviewable, area.customize-unpreviewable {
+	color: #fff;
+}
+#foodora-kp{
+	margin-top: 22px
+}
+
+.teamtailor-jobs-widge {
+	font-size: 30px;
+}
+
+.desktopcodes {
+	font-family: rift;
+	
+}
+
+
+
+#lounast {
+	font-family: rift;
+	font-weight: 600px;
+}
+		
+		
+		@media only screen and (min-width: 992px) {
+.menu-nd { display: none !important; }}
+
+# Mobile
+only screen and (min-width: 480px)
+
+# Tablet
+only screen and (min-width: 768px) 
+
+# Desktop
+only screen and (min-width: 992px)
+
+# Huge
+only screen and (min-width: 1280px) 
+
